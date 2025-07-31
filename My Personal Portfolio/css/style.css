@@ -54,12 +54,7 @@ section {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
-.logo {
-    font-size: 2.8rem;
-    color: var(--text-color);
-    font-weight: 700;
-    cursor: pointer;
-}
+
 .logo {
   display: flex;
   align-items: center;
@@ -198,6 +193,7 @@ section {
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
+  margin: 2rem ;
 }
 
 .home-content h1 {
@@ -600,19 +596,31 @@ section {
     .home {
         flex-direction: column;
     }
-
-    .home-content h3{
-        font-size: 2.6rem;
+    .home-content {
+    margin-top: 6rem; /* or use padding-top */
+    text-align: center;
     }
-
     .home-content h1 {
-        font-size: 5rem;
-    }
+    font-size: 3.5rem;
+}
+.home-content h3 {
+    font-size: 2rem;
+}
 
-    .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
+
+    .home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.home-img img {
+    width: 70vw;
+    max-width: 300px;
+    height: auto;
+}
+
 
     .about {
         flex-direction: column-reverse;
@@ -622,6 +630,7 @@ section {
         width: 70vw;
         margin-top: 4rem;
     }
+    
     .services h2 {
         margin-bottom: 3rem;
     }
