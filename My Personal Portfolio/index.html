@@ -214,22 +214,34 @@
 
     <!-- contact section design -->
       <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
-          <div class="input-box">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Email Address" required />
-          </div>
-          <div class="input-box">
-            <input type="number" placeholder="Mobile Number" required />  
-            <input type="text" placeholder="Subject" required />
-          </div>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-            <h1> OR </h1>
-            <p> Contact Me through Gmail : sgk0874@gmail.com</p>
-        </form>
-      </section>
+  <h2 class="heading">Contact <span>Me!</span></h2>
+
+  <form action="https://formsubmit.co/sgk0874@gmail.com" method="POST">
+    <!-- Optional: block spam -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Optional: redirect to a thank-you page -->
+    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+    <div class="input-box">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+    </div>
+
+    <div class="input-box">
+      <input type="number" name="phone" placeholder="Mobile Number" required />  
+      <input type="text" name="subject" placeholder="Subject" required />
+    </div>
+
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+    <input type="submit" value="Send Message" class="btn">
+
+    <h1> OR </h1>
+    <p> Contact Me through Gmail: <a href="mailto:sgk0874@gmail.com">sgk0874@gmail.com</a></p>
+  </form>
+</section>
+
 
 
 
